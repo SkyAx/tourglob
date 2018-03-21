@@ -1,0 +1,23 @@
+{
+  "name": "belarus-landing",
+  "description": "The landing page about Belarus",
+  "main": "index.html",
+  "authors": [
+    "SkyAx"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "fontawesome#^4.7.0",
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0"
+  }
+}

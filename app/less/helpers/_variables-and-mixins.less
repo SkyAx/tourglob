@@ -1,0 +1,125 @@
+/////////////////
+////VARIABLES////
+/////////////////
+
+//COLORS//
+@white: rgb(255, 255, 255);
+@white-rgba-95: rgba(255, 255, 255, .95);
+@white-rgba-7: rgba(255, 255, 255, .7);
+@white-rgba-8: rgba(255, 255, 255, .8);
+@white-rgba-4: rgba(255, 255, 255, .4);
+@white-rgba-2: rgba(255, 255, 255, .2);
+
+@black: rgb(0, 0, 0);
+@black-rgba-7: rgba(0, 0, 0, .7);
+@black-rgba-4: rgba(0, 0, 0, .4);
+@black-rgba-2: rgba(0, 0, 0, .2);
+
+@middle-grey: #7c8287;
+@pre-color: #3f4143;
+@border-color: #c8c8c8;
+@dark-grey: #20272d;
+
+@blue: #3aadfa;
+@green: rgb(173,250,58);
+@orange: #eb7e51;
+@margin-section: 80px;
+
+/////////////////
+/////MIXINS//////
+/////////////////
+
+.transform(@transforms) {
+  -webkit-transform: @transforms;
+  -moz-transform: @transforms;
+  -ms-transform: @transforms;
+  -o-transform: @transforms;
+  transform: @transforms;
+}
+
+.rotate(@deg) {
+  .transform(rotate(@deg));
+}
+
+.scale(@scale) {
+  .transform(scale(@scale));
+}
+
+.scale(@x, @y) {
+  .transform(scale(@x, @y));
+}
+
+.translate(@x, @y) {
+  .transform(translate(@x, @y));
+}
+
+.skew(@xdeg, @ydeg) {
+  .transform(skew(@xdeg, @ydeg));
+}
+
+.transform-origin(@origin) {
+  -webkit-transform-origin: @origin;
+  -moz-transform-origin: @origin;
+  -ms-transform-origin: @origin;
+  -o-transform-origin: @origin;
+  transform-origin: @origin;
+}
+
+.background-size(@size) {
+  -webkit-background-size: @size;
+  -moz-background-size: @size;
+  -ms-background-size: @size;
+  -o-background-size: @size;
+  background-size: @size;
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -moz-transition: @transition;
+  -ms-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.transition(@transition, @transition-two) {
+  -webkit-transition: @transition, @transition-two;
+  -moz-transition: @transition, @transition-two;
+  -ms-transition: @transition, @transition-two;
+  -o-transition: @transition, @transition-two;
+  transition: @transition, @transition-two;
+}
+
+.animation(@animation) {
+  -webkit-animation: @animation;
+  -moz-animation: @animation;
+  -ms-animation: @animation;
+  -o-animation: @animation;
+  animation: @animation;
+}
+
+.animation-delay(@delay) {
+  -webkit-animation-delay: @delay;
+  -moz-animation-delay: @delay;
+  -ms-animation-delay: @delay;
+  -o-animation-delay: @delay;
+  animation-delay: @delay;
+}
+
+.box-sizing(@value) {
+  box-sizing: @value;
+  -webkit-box-sizing: @value;
+  -moz-box-sizing: @value;
+}
+
+.button(@border-color, @border-radius, @color, @bgcolor, @width) {
+  border: 1px solid @border-color;
+  border-radius: @border-radius;
+  color: @color;
+  background-color: @bgcolor;
+  width: @width;
+  padding: 13px 0;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
